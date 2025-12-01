@@ -4,16 +4,16 @@
 
 ### UI & Operations:
 
-![CalculatorUI-addition](/screenshots/task81.jpg)
+![CalculatorUI-addition](/screenshots/t1.jpg)
 
 
-![CalculatorUI-subtraction](/screenshots/task82.jpg)
+![CalculatorUI-subtraction](/screenshots/t2.jpg)
 
 
-![CalculatorUI-multiplication](/screenshots/task83.jpg)
+![CalculatorUI-multiplication](/screenshots/t3.jpg)
 
 
-![CalculatorUI-division](/screenshots/task84.jpg)
+![CalculatorUI-division](/screenshots/t4.jpg)
 
 ### Claude Running Streamlit on the background:
 
