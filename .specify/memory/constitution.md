@@ -1,55 +1,43 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report:
+Version change: 0.0.0 → 1.0.0
+List of modified principles:
+  - PROJECT_NAME: Simple Calculator
+  - PRINCIPLE_1_NAME: Modularity
+  - PRINCIPLE_2_NAME: Basic Operations
+  - PRINCIPLE_3_NAME: Streamlit UI
+  - PRINCIPLE_4_NAME: Testability
+  - PRINCIPLE_5_NAME: Error Handling
+Added sections: None
+Removed sections: None
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ⚠ pending
+  - .specify/templates/spec-template.md: ⚠ pending
+  - .specify/templates/tasks-template.md: ⚠ pending
+  - .specify/templates/commands/*.md: ⚠ pending
+  - README.md: ⚠ pending
+  - docs/quickstart.md: ⚠ pending
+Follow-up TODOs: TODO(RATIFICATION_DATE): Original adoption date unknown.
+-->
+# Simple Calculator Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Modularity
+Every component of the calculator (e.g., core logic, UI) MUST be developed independently with clear interfaces. This ensures maintainability and allows for future changes without affecting unrelated parts.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Basic Operations
+The calculator MUST only support basic arithmetic operations: addition, subtraction, multiplication, and division. No advanced mathematical functions are to be implemented.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Streamlit UI
+The user interface MUST be built using Streamlit. All UI components and interactions will adhere to Streamlit's framework and best practices.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Testability
+All core calculator logic MUST be independently testable without reliance on the UI. Unit tests are mandatory for all mathematical operations to ensure correctness.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-### [PRINCIPLE_6_NAME]
-
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Error Handling
+The application MUST gracefully handle errors such as division by zero and invalid input types. User-friendly error messages MUST be displayed in the UI.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution supersedes all other practices. Amendments require documentation, approval, and a migration plan if changes are significant. All pull requests and code reviews must verify compliance with these principles.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Original adoption date unknown. | **Last Amended**: 2025-12-02
